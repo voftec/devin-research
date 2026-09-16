@@ -1,16 +1,17 @@
 # AGENTS.md
 
-Instrucciones para agentes (Devin Cloud) que trabajan en este repositorio.
+Instrucciones para agentes (Devin Cloud y Devin Desktop) que trabajan en este repositorio.
 
 ## Contexto
 
-Este repo se usa principalmente desde Devin en la nube. No requiere build ni dependencias.
+Este repo se usa desde Devin en la nube y desde Devin Desktop/CLI. No requiere build ni dependencias.
 
 ## Estructura
 
 - `research/` — investigaciones. Un archivo Markdown por tema.
 - `docs/` — documentación derivada de las investigaciones.
 - `EVALS/` — evaluaciones. Cada eval en su propia carpeta con `README.md`, casos y resultados.
+- `MCP/` — configuración e instrucciones de MCP (Playwright). `.devin/mcp_config.json` es la copia que Devin Desktop carga solo.
 
 ### Estructura formal de `docs/`
 
@@ -31,6 +32,11 @@ Cada documento empieza con un encabezado:
 - Fecha: AAAA-MM-DD
 - Fuente: enlace a research/ o EVALS/ correspondiente
 ```
+
+## MCP
+
+- Playwright MCP está disponible para navegar y verificar UI; usarlo en las evaluaciones de `EVALS/` y guardar capturas en `resultados/`.
+- Ver `MCP/README.md` para configuración en Cloud, Desktop u otros clientes.
 
 ## Convenciones
 
